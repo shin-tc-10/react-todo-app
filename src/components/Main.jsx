@@ -24,22 +24,24 @@ const Main = () => {
   return (
     <div className="main">
       <main>
-        <h1>今日やること</h1>
-        <div>
-          <input
-            type="text"
-            value={inputValue}
-            onChange={handleInputChange}
-          ></input>
-          <button onClick={handleAddTodo}>追加</button>
+        <div className="todo">
+          <h1>今日のやること</h1>
+          <div>
+            <input
+              type="text"
+              value={inputValue}
+              onChange={handleInputChange}
+            ></input>
+            <button onClick={handleAddTodo}>追加</button>
+          </div>
+          {todos.map((todo, index) => (
+            <Todo
+              key={index}
+              todo={todo}
+              onDelete={() => handleDeleteTodo(index)}
+            />
+          ))}
         </div>
-        {todos.map((todo, index) => (
-          <Todo
-            key={index}
-            todo={todo}
-            onDelete={() => handleDeleteTodo(index)}
-          />
-        ))}
       </main>
     </div>
   );
