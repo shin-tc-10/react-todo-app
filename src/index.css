@@ -35,10 +35,63 @@ body::before {
 
 .todo {
   height: 600px;
-  width: 300px;
+  width: 400px;
   background: white;
   margin: 0 auto;
   margin-top: 100px;
   padding: 10px;
   border-radius: 5px;
+}
+
+
+/* 追加ボタン */
+.btn-blue,
+a.btn-blue {
+  color: #fff;
+  background-color: #0085eb;
+  border: none;
+  border-radius: 3px;
+  padding: 7px;
+  font-size: 1.0rem;
+}
+.btn-blue:hover,
+a.btn-blue:hover {
+  color: #fff;
+  background: #0085eb;
+}
+.btn-add {
+  padding: 7px 15px;
+}
+
+.textbox-001-label,
+.textbox-001 {
+    color: #333;
+}
+
+.textbox-001-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .9em;
+}
+
+.textbox-001 {
+    width: 60%;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #969da3;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.textbox-001::placeholder {
+    color: #999;
+}
+
+
+/* TODOエリア */
+.todo-area {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 78%;
 }

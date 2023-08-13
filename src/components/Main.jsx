@@ -25,14 +25,18 @@ const Main = () => {
     <div className="main">
       <main>
         <div className="todo">
-          <h1>今日のやること</h1>
+          <h1>TODO</h1>
           <div>
             <input
               type="text"
               value={inputValue}
               onChange={handleInputChange}
+              className="textbox-001"
+              placeholder="TODOを入力"
             ></input>
-            <button onClick={handleAddTodo}>追加</button>
+            <button onClick={handleAddTodo} className="btn btn-blue btn-add">
+              Add
+            </button>
           </div>
           {todos.map((todo, index) => (
             <Todo

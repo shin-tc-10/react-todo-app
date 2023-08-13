@@ -2,9 +2,13 @@ import React from "react";
 
 const Todo = ({ todo, onDelete }) => {
   return (
-    <div>
-      <span>{todo}</span>
-      <button onClick={onDelete}>Delete</button>
+    <div className="todo-area">
+      <div className="todo-text-area">
+        <span>{todo}</span>
+      </div>
+      <button onClick={onDelete} className="btn btn-blue">
+        Delete
+      </button>
     </div>
   );
 };
