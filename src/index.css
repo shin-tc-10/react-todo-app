@@ -5,22 +5,26 @@
 
 body {
   background: #bbe5ff;
+  height: 100vh;
 }
 
 h2 {
   padding: 10px;
 }
 
-.todo {
-  height: 600px;
-  width: 400px;
-  background: white;
-  margin: 0 auto;
-  margin-top: 100px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+@media (min-width: 768px) {
+  .todo {
+    height: 600px;
+    width: 400px;
+    background: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  }
 }
+
 
 .btn-blue,
 a.btn-blue {
