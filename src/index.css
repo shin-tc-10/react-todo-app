@@ -1,36 +1,14 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-body::before {
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-  width: 100%;
-  height: 100vh;
-  background-image: url('./images/shutterstock_732378577.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+body {
+  background: #bbe5ff;
 }
 
-/* ヘッダー */
-.header {
-  height: 70px;
-  width: 100%;
-  color: white;
-  line-height: 70px;
-  font-size: 1.5rem;
-}
-
-/* メイン */
-.main {
-  height:100vh;
-  opacity: 90%;
-  font-size: 1.0rem;
+h2 {
+  padding: 10px;
 }
 
 .todo {
@@ -41,57 +19,52 @@ body::before {
   margin-top: 100px;
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
-
-/* 追加ボタン */
 .btn-blue,
 a.btn-blue {
   color: #fff;
   background-color: #0085eb;
   border: none;
   border-radius: 3px;
-  padding: 7px;
+  padding: 6px 10px;
   font-size: 1.0rem;
 }
+
 .btn-blue:hover,
 a.btn-blue:hover {
   color: #fff;
   background: #0085eb;
 }
-.btn-add {
-  padding: 7px 15px;
-}
 
 .textbox-001-label,
 .textbox-001 {
-    color: #333;
+  color: #333;
 }
 
 .textbox-001-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: .9em;
+  display: block;
+  margin-bottom: 5px;
+  font-size: .9em;
 }
 
 .textbox-001 {
-    width: 60%;
-    padding: 8px;
-    margin-right: 5px;
-    border: 1px solid #969da3;
-    border-radius: 3px;
-    font-size: 1em;
+  width: 60%;
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #969da3;
+  border-radius: 3px;
+  font-size: 1em;
 }
 
 .textbox-001::placeholder {
-    color: #999;
+  color: #999;
 }
 
-
-/* TODOエリア */
 .todo-area {
   margin: 30px 50px;
   display: flex;
   justify-content: space-between;
-  width: 78%;
+  width: 77%;
 }

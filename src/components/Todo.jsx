@@ -7,7 +7,7 @@ const Todo = ({ todo, onDelete }) => {
         <span>{todo}</span>
       </div>
       <button onClick={onDelete} className="btn btn-blue">
-        Delete
+        削除
       </button>
     </div>
   );

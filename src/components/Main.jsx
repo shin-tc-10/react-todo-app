@@ -12,7 +12,7 @@ const Main = () => {
 
   const handleAddTodo = () => {
     setTodos([...todos, inputValue]);
-    // setInputValue("");
+    setInputValue("");
     console.log(todos);
   };
 
@@ -22,28 +22,16 @@ const Main = () => {
   };
 
   return (
-    <div className="main">
+    <div>
       <main>
         <div className="todo">
-          <h1>TODO</h1>
+          <h2>React Todo App</h2>
           <div>
-            <input
-              type="text"
-              value={inputValue}
-              onChange={handleInputChange}
-              className="textbox-001"
-              placeholder="TODOを入力"
-            ></input>
-            <button onClick={handleAddTodo} className="btn btn-blue btn-add">
-              Add
-            </button>
+            <input type="text" value={inputValue} onChange={handleInputChange} className="textbox-001" placeholder="TODOを入力" />
+            <button onClick={handleAddTodo} className="btn btn-blue btn-add">追加</button>
           </div>
           {todos.map((todo, index) => (
-            <Todo
-              key={index}
-              todo={todo}
-              onDelete={() => handleDeleteTodo(index)}
-            />
+            <Todo key={index} todo={todo} onDelete={() => handleDeleteTodo(index)}/>
           ))}
         </div>
       </main>
